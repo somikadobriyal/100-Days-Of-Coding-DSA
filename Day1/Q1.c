@@ -1,7 +1,8 @@
 // Write a C program to insert an element x at a given 1-based position pos in an array of n integers. Shift existing elements to the right to make space.
 
 #include <stdio.h>
-int main() {
+int main() 
+{
     int n, pos, x;
     int arr[100];   // array with extra space
     int i;
@@ -33,8 +34,6 @@ int main() {
 
     // inserting the element
     arr[pos - 1] = x;
-
-    // printing updated array
     printf("Updated array:\n");
     for (i = 0; i <= n; i++) 
     {
@@ -42,4 +41,3 @@ int main() {
     }
     return 0;
 }
-
